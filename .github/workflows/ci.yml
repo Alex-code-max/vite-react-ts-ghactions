@@ -74,8 +74,8 @@ jobs:
 
   deploy:
     name: Deploy
-    # Deploy only for main branch
-    if: github.ref == 'refs/heads/main'
+    # Deploy only for master branch
+    if: github.ref == 'refs/heads/master'
     needs: buildAndTest
     runs-on: ubuntu-latest
     permissions:
