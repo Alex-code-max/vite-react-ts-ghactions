@@ -85,7 +85,7 @@ jobs:
     # See https://devblogs.microsoft.com/devops/i-need-manual-approvers-for-github-actions-and-i-got-them-now/
     environment:
       name: alex-code-max.github.io/vite-react-ts-ghactions
-      url: https://alex-code-max.github.io/vite-react-ts-ghactions
+      url: https://alex-code-max.github.io/vite-react-ts-ghactions/
     steps:
       # Download dist artifacts
       - uses: actions/download-artifact@v3
