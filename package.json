@@ -1,5 +1,5 @@
 {
-  "name": "vite-react-ts-ghactions-template",
+  "name": "vite-react-ts-ghactions",
   "version": "1.0.0",
   "description": "React + TypeScript + Vite + Github Actions starter template",
   "repository": {
