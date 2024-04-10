@@ -23,15 +23,15 @@ jobs:
     name: Build & Test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
 
       - name: 🏗 Setup pnpm
-        uses: pnpm/action-setup@v3
+        uses: pnpm/action-setup@v2
         with:
           version: 8
 
       - name: 🏗 Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: pnpm
@@ -46,13 +46,13 @@ jobs:
         run: pnpm test:ci
 
       # Upload dist artifacts
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v3
         with:
           name: dist
           path: dist/
 
       # Upload coverage artifacts
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v3
         with:
           name: coverage
           path: coverage/lcov.info
